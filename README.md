@@ -10,4 +10,6 @@
 </ul>
 
 <h1>Screenshoot:</h1>
-<video src="https://github.com/Adham14896/Image-searcher/blob/master/bandicam%202023-09-18%2016-17-13-942.mp4">
+<video controls="controls">
+<source src="https://github.com/Adham14896/Image-searcher/blob/master/bandicam%202023-09-18%2016-17-13-942.mp4" type="video/mp4" />"
+</video>
