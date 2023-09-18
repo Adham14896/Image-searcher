@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f6fa;
+}
+
+header h1 {
+  width: 100%;
+  height: 8vh;
+  background: linear-gradient(
+    to left,
+    #00b730,
+    #02c23a,
+    #03cc44,
+    #02d74e,
+    #00e258
+  );
+  text-align: center;
+  margin: 0rem auto 50px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #ffffff;
+  padding-top: 1rem;
+  animation: fadeIn 1s ease-in;
+}
+
+.search-container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  flex: 1;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  color: #000;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+#search-btn {
+  width: 120px;
+  height: 50px;
+  margin-left: 0.5rem;
+  font-size: 15px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to left,
+    #00b730,
+    #02c23a,
+    #03cc44,
+    #02d74e,
+    #00e258
+  );
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in;
+}
+
+input::placeholder {
+  color: #c8c9ca;
+  text-align: start;
+  position: relative;
+  left: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+#results {
+  width: 80%;
+  margin: 3.5rem auto 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+#results img {
+  width: 100%;
+  border-radius: 10px;
+  height: 40vh;
+  object-fit: cover;
+  box-shadow: 10px 6px 16px -2px rgba(0, 0, 0, 0.75);
+
+  animation: fadeIn 1s ease-in;
+}
+
+#show-more {
+  width: 150px;
+  height: 40px;
+  display: none;
+  margin: 2rem auto 100px;
+  background: linear-gradient(
+    to left,
+    #00b730,
+    #02c23a,
+    #03cc44,
+    #02d74e,
+    #00e258
+  );
+  color: #ffffff;
+  letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  #results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #results {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    padding: 15px;
+    height: 70px;
+    font-size: 25px;
+  }
+  .search-container input {
+    width: 50px;
+  }
+}
