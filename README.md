@@ -1,6 +1,6 @@
 # Image-searcher
 
-<h2>Image search app that allows users to search their favorate images by writing it in the input</h2>
+<p>Image search app that allows users to search their favorate images by writing it in the input</p>
 
 <h1>Used Technologies:</h1>
 <ul>
